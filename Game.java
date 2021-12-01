@@ -26,7 +26,7 @@ public class Game {
         hangmanMain();
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("Try again ?");
+            System.out.println("Try again ? (y/n)");
             char playAgain = sc.next().charAt(0);
             switch (playAgain) {
                 case 'y':
