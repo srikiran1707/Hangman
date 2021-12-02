@@ -1,4 +1,5 @@
 
+//author @srikiran1707
 /**
  * Hangman Game
 Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words.
@@ -25,7 +26,7 @@ public class Game {
         hangmanMain();
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("Try again ?");
+            System.out.println("Try again ? (y/n)");
             char playAgain = sc.next().charAt(0);
             switch (playAgain) {
                 case 'y':
@@ -129,7 +130,7 @@ public class Game {
                         }
                         case 0: {
                             System.out.println("---------");
-                            System.out.println("      |");
+                            System.out.println("|     |");
                             System.out.println("|   [x x]");
                             System.out.println("|  >--|--<");
                             System.out.println("|     |");
@@ -145,7 +146,7 @@ public class Game {
                 if (t >= 1)
                     System.out.println(String.valueOf(c));
             } else {
-                System.out.println("you have successfully guessed the word : " + String.valueOf(c));
+                System.out.println("You have successfully guessed the word : " + String.valueOf(c));
                 break;
             }
         }
